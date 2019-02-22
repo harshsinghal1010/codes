@@ -1,0 +1,29 @@
+Add dependency
+		
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-ehcache</artifactId>
+			<version>5.2.2.Final</version>
+
+		</dependency>
+
+
+
+
+Application.properties me
+
+# L2 cache
+spring.cache.jcache.config=classpath:ehcache.xml
+
+inside service 
+
+@CacheConfig(cacheNames = "Location")
+public class LocationServiceImpl
+
+@Cacheable -------------------------- on method
+public List<Location> findMethod
+
+
+inside POJO
+@EntityListeners(JPAListener.class)
+public class User {
