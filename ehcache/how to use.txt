@@ -9,6 +9,9 @@ Add dependency
 
 
 
+# enable chache in main method
+   @EnableCaching
+   
 
 Application.properties me
 
